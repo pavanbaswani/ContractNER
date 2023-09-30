@@ -1,0 +1,47 @@
+{
+    "conll2003": [
+        "Act",
+        "Address",
+        "Court",
+        "EffectiveDate",
+        "PII_Ref",
+        "Parties",
+        "Percentage",
+        "Price",
+        "Principal",
+        "Ratio",
+        "Regulation",
+        "RenewalTerm",
+        "Rent",
+        "RevolvingCredit",
+        "Role",
+        "Salary",
+        "Shares",
+        "TerminationDate",
+        "Title"
+    ],
+    "mit_restaurant": [
+        "Amenity",
+        "Rating",
+        "Cuisine",
+        "Dish",
+        "Hours",
+        "Location",
+        "Price",
+        "Restaurant_Name"
+    ],
+    "mit_movie": [
+        "ACTOR",
+        "AWARD",
+        "CHARACTER",
+        "DIRECTOR",
+        "GENRE",
+        "OPINION",
+        "ORIGIN",
+        "PLOT",
+        "QUOTE",
+        "RELATIONSHIP",
+        "SOUNDTRACK",
+        "YEAR"
+    ]
+}

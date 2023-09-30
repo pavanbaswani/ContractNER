@@ -1,0 +1,33 @@
+{
+  "data": {
+    "train": "../dataset/v3/train.json",
+    "valid": "../dataset/v3/val.json",
+    "test": "../dataset/v3/test.json",
+    "dataset": "conll2003"
+  },
+  "tokenizer": {
+    "max_length": 1024,
+    "padding": true,
+    "return_tensors": "pt"
+  },
+  "model": {
+    "name": "t5-small"
+  },
+  "training": {
+    "batch_size": 2,
+    "learning_rate": 5e-5,
+    "n_epoch": 10,
+    "do_save_best_checkpoint": true,
+    "metric_name": "f1-score",
+    "metric_avg": "weighted_avg"
+  },
+  "evaluation": {
+    "batch_size": 2
+  },
+  "generation": {
+    "num_beams": 2,
+    "max_length": 128
+  },
+  "seed": 23,
+  "replace_labels_with_special_tokens": false
+}
