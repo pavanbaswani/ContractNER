@@ -1,0 +1,8 @@
+{
+	"lr": 1e-3,
+	"batch_size": 4,
+	"num_epochs": 15,
+	"model_checkpoint": "roberta-large",
+	"dataset": "../dataset/v3/",
+	"outptu_dir": "./dataset_output/"
+}

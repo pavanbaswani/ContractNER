@@ -41,12 +41,14 @@ prediction_span_formatter = PredictionSpanFormatter()
 warnings.filterwarnings("ignore")
 
 ### Parameters and initial setup
-access_token = "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"
+access_token = "<<huggingface_token_if_using_pushed_model>>"
+login(token=access_token)
+
+model_id = "<<huggingface_model_id or checkpoint_folder_path>>"
 
 set_global_seed(config["seed"])
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
-login(token=access_token)
 
 
 ### ==================
@@ -103,6 +105,7 @@ for key, value in data_dict.items():
 config = load_json('config.json')
 options = load_json("options.json")
 options = options[config["data"]["dataset"]]
+base_url = config['data']['train'].replace(os.path.basename(config['data']['train']), '')
 instructions = load_json("instructions.json")
 
 
